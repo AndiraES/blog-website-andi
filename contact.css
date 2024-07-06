@@ -1,0 +1,308 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #5c5c5c;
+    transition: 0.2s;
+}
+
+
+/* HEADER */
+
+#header {
+    width: 100%;
+}
+
+#header h1 {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    /* background: red; */
+}
+
+#header h1 a {
+    color: #000;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    background: url(img/splatter.webp);
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    /* position: sticky; */
+    width: 100%;
+    padding: 7px;
+    padding-top: 13px;
+    border-bottom: 1px solid #e6e4e4;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#navbar ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #cfcece;
+    transition: 0.3s;
+}
+
+/* BAR */
+
+#bar {
+    cursor: pointer;
+}
+
+#bar:hover {
+    color: #cfcece;
+    transition: 0.3s;
+}
+
+
+/* CONTACT */
+
+.contact-body {
+    background: #f6f6f6;
+}
+
+.contact {
+    width: 70%;
+    margin: 30px auto;
+    padding: 5px;
+}
+
+.contact h6 {
+    margin-bottom: 15px;
+    font-size: 13px;
+    font: caption;
+}
+
+.contact input {
+    width: 350px;
+    padding: 13px;
+    border-radius: 15px;
+    border: none;
+    background: #fff;
+}
+
+.contact-us {
+    width: 13%;
+    padding: 5px;
+    font: caption;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.contact-name, .contact-information {
+    display: flex;
+    margin-top: 35px;
+    /* justify-content: center; */
+}
+
+.last-name {
+    margin-left: 20px;
+}
+
+.number {
+    margin-left: 20px;
+}
+
+.message {
+    margin-top: 35px;
+}
+
+.message input {
+    width: 750px;    
+    height: 200px;
+}
+
+.contact button {
+    width: 300px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    border: none;
+    color: #fff;
+    background: #000;
+    padding: 17px;
+    border-radius: 15px;
+}
+
+.contact button:hover {
+    background: #727272;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.numbers {
+    display: flex;
+}
+
+.numbers h6 {
+    color: #dbdbdb;
+    margin-top: 35px;
+    margin-right: 13px;
+    font: caption;
+    cursor: pointer;
+}
+
+.numbers h6:hover {
+    color: #000;
+    transition: 0.2s;
+}
+
+.numbers .two {
+    color: #000;
+}
+
+
+/* RESPONSIVE CONTACT */
+
+@media (max-width: 799px) {
+
+    .header-navbar {
+        width: 100%;
+        /* background: grey; */
+    }
+
+    #header {
+        width: 100%;
+        /* border-bottom: 1px solid #e6e4e4; */
+    }
+
+    #header h1 {
+        margin: auto;
+        width: 350px;
+        text-align: center;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar ul {
+       display: none;
+    }
+
+
+    /* CONTACT BODY */
+
+    .contact-body {
+        width: 100%;
+    }
+
+    .contact {
+        /* background: red; */
+        margin: 30px auto;
+        width: 400px;
+    }
+
+    .contact-us {
+        width: 23%;
+        font-size: 20px;
+    }
+
+    .contact-name {
+        display: grid;
+    }
+
+    .first-name, .last-name {
+        margin: 10px auto;
+    }
+
+    .contact-information {
+        display: grid;
+        margin-top: 5px;
+    }
+
+    .email-address, .number {
+        margin: 10px auto;
+    }
+    
+    .message input {
+        width: 360px;
+        height: 150px;
+    }
+
+    .message {
+        margin: 10px auto auto 13px;
+    }
+
+    .contact button {
+        margin: 15px auto 15px 13px;
+    }
+
+    .copyright {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 477px) {
+
+    /* CONTACT BODY */
+
+    .contact {
+        /* background: red; */
+        /* margin: 30px auto; */
+        width: 340px;
+    }
+
+    .contact-us {
+        width: 24%;
+        font-size: 18px;
+    }
+
+    .contact-name div input {
+        width: 300px;
+    }
+
+    .contact-information div input {
+        width: 300px;
+    }
+
+    .message {
+        margin: 10px auto 13px 6px;;
+    }
+
+    .message input {
+        margin-left: 3px;
+        width: 300px;
+        /* background: blue; */
+    }
+
+    .copyright {
+        width: 350px;
+        text-align: center;
+        margin: 10px auto 10px auto;
+        font-size: 13px;
+    }
+
+}

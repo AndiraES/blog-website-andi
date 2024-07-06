@@ -1,0 +1,419 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #5c5c5c;
+    transition: 0.2s;
+}
+
+
+/* HEADER */
+
+#header {
+    width: 100%;
+}
+
+#header h1 {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    /* background: red; */
+}
+
+#header h1 a {
+    color: #000;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    background: url(img/splatter.webp);
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    /* position: sticky; */
+    width: 100%;
+    padding: 7px;
+    padding-top: 13px;
+    border-bottom: 1px solid #e6e4e4;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+#navbar ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #cfcece;
+    transition: 0.3s;
+}
+
+#close {
+    display: none;
+}
+
+#mobile {
+    display: none;
+}
+
+
+/* CONTENT 3 */
+
+.content3 {
+    display: flex;
+    justify-content: center;
+}
+
+.recent-content-list {
+    width: 600px;
+}
+
+.recent-news {
+    width: 23%;
+    margin-top: 70px;
+    margin-left: 5px;
+    padding: 5px;
+    font: caption;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.recent-content {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+
+.recent-content h5 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.recent-content p {
+    font-size: 13px;
+}
+
+.recent-content img {
+    height: 150px;
+    width: 190px;
+    margin-left: 15px;
+}
+
+.numbers {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 7px;
+}
+
+.numbers h6 {
+    margin-right: 15px;
+    font-size: 13px;
+    font: caption;
+    color: #dbdada;
+    cursor: pointer;
+}
+
+.popular-content-list {
+    margin-left: 40px;
+    width: 600px;
+}
+
+.numbers .two {
+    color: #000;
+}
+
+.numbers h6:hover {
+    color: #000;
+    transition: 0.3s;
+}
+
+.popular-post {
+    width: 25%;
+    margin-top: 70px;
+    margin-left: 5px;
+    padding: 5px;
+    font: caption;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.popular-content {
+    margin-top: 40px;
+}
+
+.popular-list {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.popular-list h2 {
+    font: caption;
+    font-size: 30px;
+    color: #e5e3e3;
+}
+
+.popular-list h5 {
+    margin: auto 15px;
+    font: caption;
+    font-size: 17px;
+}
+
+.see-all-populars {
+    text-decoration: none;
+    font-size: 12px;
+    color: #4b93f2;
+}
+
+.see-all-populars:hover {
+    color: #cfcece;
+    transition: 0.3s;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 250px;
+    background: #f6f6f6;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-content {
+    width: 400px;
+}
+
+.newsletter-content h5 {
+    font-size: 17px;
+}
+
+.newsletter-content p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.newsletter-content, .newsletter-input {
+    margin: 80px auto;
+}
+
+.newsletter-input input {
+    border: none;
+    padding: 15px;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.newsletter-input i {
+    background: #363535;
+    color: #fff;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.newsletter-input i:hover {
+    background: #727272;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.copyright {
+    color: #c7c7c7;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+/* RESPONSIVE HOME */
+
+@media (max-width: 799px) {
+
+    /* HEADER-NAVBAR */
+
+    .header-navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header {
+        width: 100%;
+        /* background: red; */
+
+        /* border-bottom: 1px solid #e6e4e4; */
+    }
+
+    #navbar {
+       display: none;
+    }
+    
+
+    /* CONTENT 3 */
+
+    .content3 {
+        display: grid;
+    }
+    
+    .recent-news {
+        width: 23%;
+        margin: 30px auto 15px 120px;
+    }
+    
+    .recent {
+        width: 450px;
+        margin: auto auto 20px 120px;
+        /* background: red; */
+    }
+
+    .popular-post {
+        width: 23%;
+        margin: 30px auto 15px 83px;
+    }
+
+    .popular {
+        width: 450px;
+        margin: auto auto 20px 81px;
+        /* background: blue; */
+    } 
+
+    .numbers {
+        display: flex;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        height: 200px;
+        width: 100%;
+        background: #f6f6f6;
+        /* margin: auto 25px auto 25px; */
+    }
+    
+    .newsletter {
+        display: grid;
+        align-items: center;
+    }
+    
+    .newsletter-content {
+        width: 400px;
+        /* background: blue; */
+    }
+
+    .newsletter-input {
+        margin-top: 0px;
+    }
+
+    .newsletter-content, .newsletter-input {
+        margin: 20px auto;
+    }
+
+}
+
+@media (max-width: 477px) {
+
+     /* HEADER-NAVBAR */
+
+    #mobile {
+        margin-right: 15px;
+        cursor: pointer
+    }
+
+
+    /* CONTENT 3 */
+    
+    .recent-news {
+        width: 23%;
+        margin: 30px auto 15px 150px;
+    }
+    
+    .recent {
+        width: 350px;
+        margin: auto auto 20px 145px;
+        /* background: red; */
+    }
+
+    .recent-content img {
+        width: 150px;
+        height: 100px
+    }
+
+    .popular-post {
+        width: 23%;
+        margin: 30px auto 15px 110px;
+    }
+
+    .popular {
+        width: 350px;
+        margin: auto auto 20px 110px;
+        /* background: blue; */
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+    }
+
+    .newsletter {
+        width: 350px;
+    }
+    
+    .newsletter-content {
+        width: 300px;
+    }
+
+    .newsletter-input {
+        width: 350px;
+        margin-top: 0px;
+        text-align: center;
+        /* background: red; */
+    }
+
+    .newsletter-input input {
+        width: 230px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+
+}
